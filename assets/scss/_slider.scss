@@ -1,0 +1,37 @@
+.slick-track{
+  padding: 5px 0;
+}
+
+.slick-arrow {
+    position: absolute;
+    bottom: -50px;
+    font-size:0;
+    background-color: #ddd;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: background-color .4s;
+    z-index: 1;
+    &:hover {
+      background-color: #ddd;
+    }
+    &:after {
+      content: '';
+      display: inline-block;
+      transition: .4s all;
+      width: 6px;
+      height: 6px;
+      border-top: 2px solid #fff;
+      border-left: 2px solid #fff;
+    }
+    &.slick-prev {
+      left: calc(50% - 40px);
+      transform: rotate(-45deg);
+    }
+    &.slick-next {
+      right: calc(50% - 40px);
+      transform: rotate(135deg);
+    }
+  }

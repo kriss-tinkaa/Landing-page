@@ -1,12 +1,26 @@
+.testimonail-section:before,
+.slick-arrow,
+.feautures-section .features-item:hover, 
 .section-title .title:before,
 .home-section,
 .header{
     background-color:  #d70d25;
 }
+
+
+.testimonail-section .client-info h5,
+.products-section .product-content .product-price .new-price,
+.feautures-section .features-item .icon i,
 .about-section .about-content ul li i,
 .section-title .title,
 .main-btn,
 .main-btn:hover{
     color: #d70d25;
 
+}
+
+
+.slick-arrow:hover,
+.testimonail-section .client-info img {
+    border-color: #d70d25;
 }

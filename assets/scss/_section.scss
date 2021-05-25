@@ -96,6 +96,7 @@ body{
         }
         p{
             font-size: 1.2rem;
+            font-weight: 400;
             color: #fff;
             margin: 20px 0 40px;
             line-height: 1.22;
@@ -214,11 +215,208 @@ body{
 }
 /* Feauteres Section */
 
-.feauteres-section{
-    
+.feautures-section{
+    padding: 80px 0 50px;
+    .features-item{
+        box-shadow: 0 0 10px #dddde3;
+        padding: 30px 40px;
+        margin-bottom: 30px;
+        background-color: #fff;
+        border-radius: 5px;
+        text-align: center;
+        transition: all 0.5s ease;
+        &:hover{
+            transform: translateY(-10px);
+            .icon i, h3, p{
+                color:#fff
+            }
+        }
+        .icon{
+            margin-bottom: 25px;
+            i{
+                font-size: 2.5rem;
+                display: inline-block;
+                transition: all 0.5s ease;
+            }
+        }
+        h3{
+            font: 600 1.35rem/1.5 $font-primary;
+            color:#222;
+            margin: 0 0 15px;
+            transition: all 0.5s ease;
+        }
+        p{
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.625;
+            color: #555;
+            margin: 0;
+            transition: all 0.5s ease;
+        }
+    }
+}
+/* Products Section */
+.products-section{
     padding: 80px 0 80px;
+    background-color: #fff;
+    .slider{
+        margin-bottom: 50px;
+    }
+    .product-item{
+        box-shadow: 0 0 10px #dddde3;
+        &:hover .product-img .overlay .btn{
+            transform: translateY(0px);
+            transition: all 0.5s ease;
+        }
+        .product-img{
+            border-bottom: 1px solid #eee;
+            position: relative;
+            img{
+                width: 100%;
+                display: block;
+            }
+            .overlay{
+                position: absolute;
+                left: 0;
+                top:0;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(0,0,0, .6);
+                transition: all 0.5s ease;
+                opacity: 0;
+                z-index: 1;
+                &:hover{
+                    opacity: 1;
+                    .btn{
+                        cursor: pointer;
+                    }
+                }
+                .btn{
+                    margin: auto;
+                    transform: translateY(100px);
+                }
+            }
+        }
+        .product-content{
+            padding: 0 30px;
+            text-align: center;
+            .product-price{
+                margin: 15px 0 5px;
+                .new-price{
+                    font-size: 1.125rem;
+                    font-weight: 700;
+                    display: inline-block;
+                    margin: 5px 0;
+                }
+                .old-price{
+                    font-size: 1.125rem;
+                    display: inline-block;
+                    color: #959595;
+                }
+            }
+            .product-name{
+                font-size: 1rem; 
+                font-weight: 600;
+                color: #222;
+                line-height: 26px;
+                margin: 0;
+                padding-bottom: 20px;
+            }
+        }
+    }
 }
 
+/* Testimonial Section */
+.testimonail-section{
+    padding: 80px 0 80px; 
+    background-image: url('../img/bg-01.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+    &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.85;
+    }
+    .section-title{
+        .title{
+            color: #fff;
+            &:before{
+                background-color: #fff;
+            }
+        }
+        .subtitle{
+            color: #fff;
+        }
+    }
+    .testi-item{
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 5px;
+        .testi-comment{
+            p{
+                font-size: 1rem;
+                font-weight: 400;
+                font-style: italic;
+                line-height: 2; 
+                color: #555;
+                margin: 0 0 10px;
+                .fa-quote-left{
+                    margin-right: 5px;
+                }
+                .fa-quote-right{
+                    margin-left: 5px;
+                }
+             }
+             .stars {
+                 margin: 0 0 20px;
+                li{
+                    display: inline-block;
+                    margin: 0 1px;
+                    i{
+                        font-size: 0.8125rem;
+                        color: #ff9800;
+                    }
+                 }
+             }
+        }        
+    }
+    .client-info{
+        position: relative;
+        padding-left: 80px;
+        padding-top: 5px;
+        min-height: 60px;
+        img{
+            height: 60px;
+            width: 60px;
+            border: 2px solid transparent;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        h5{
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 0;
+            line-height: 1.5;
+            margin: 0;
+        }
+        p{
+            font-size: 1rem;
+            font-weight: 400; 
+            line-height: 1.8;
+            color: #555;
+            margin: 0;
+        }
+    }
+}
 
 /* Keyframes */
 @keyframes productani01{
