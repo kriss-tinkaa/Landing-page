@@ -1,0 +1,52 @@
+.logo-circle{
+    position: relative;
+    width: 26px;
+    height: 26px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: -2px;
+    margin-right: 5px;
+    &:before{
+        content: "";
+        height: 8px;
+        width: 8px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -4px;
+        margin-top: -4px;
+
+    }
+}
+
+.header{
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    .navbar{
+        padding: 0;
+        &.navbar-light{
+            .navbar-brand{
+                font: 600 1.875rem/1.6 $font-primary;
+                text-transform: uppercase;
+                color: #fff;
+            }
+        }
+        #collapsibleNavbar{
+            .nav-item{
+                .nav-link{
+                    color:#fff;
+                    font: 600 1rem/1.6 $font-primary;
+                    text-transform: capitalize;
+                    padding: 20px 15px 20px;
+                    opacity: 0.6;
+                    &.active{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    
+}
